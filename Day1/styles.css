@@ -1,0 +1,42 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    width: min(50%, 400px);
+    background: lightGrey;
+    margin: auto;
+    border: 2px solid black ;
+    padding: 5px;  
+}
+
+.display{
+    width: 100%;
+    background-color: darkGrey;
+    height: 70px;
+    font-size: 48px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.buttons{
+    max-width: 400px;
+    display:flex;
+    flex-flow: row wrap;
+    /* flex-wrap: wrap; */
+}
+
+button{
+    flex: 1 20%;
+    padding: 10px;
+    font-size: 2rem;
+} 
+
+.btn-operator, .btn-clear, .btn-equals{
+    background-color: #FF9500;
+}
+
+.btn-number{
+    background-color: #D4D4D2;
+}
