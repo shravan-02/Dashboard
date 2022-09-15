@@ -176,20 +176,27 @@ nav .profile-details i{
   position: relative;
   padding-top: 104px;
   display: flex;
+  height: fit-content;
+
+  flex-wrap: wrap;
 }
 .home-content .overview-boxes{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  /* height: ; */
+  /* align-items: center; */
+  /* align-content: space-around; */
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 0 20px;
   margin-bottom: 26px;
 }
 .overview-boxes .box{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: calc(100% / 2 - 15px);
+  flex-wrap: wrap;
+  max-width: 300px;
+  align-items: flex-start;
+  justify-content: space-between;
+  /* width: calc(100% / 2 - 15px); */
   background: #282d30;
   color: #bdbcbf;
   box-sizing: border-box;
@@ -241,6 +248,7 @@ nav .profile-details i{
   color: #66b0ff;
   border-radius: 12px;
   margin: -15px 0 0 6px;
+  flex-wrap: wrap;
 }
 .home-content .box .cart.two{
    color: #2BD47D;
@@ -260,8 +268,12 @@ nav .profile-details i{
 }
 .home-content .announcement-boxes{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  /* padding: 0 20px; */
+  height: fit-content;
+  align-items: baseline;
+  padding: 0 20px;
+  /* min-width: 300px; */
 }
 
 /* left box */
@@ -302,6 +314,7 @@ nav .profile-details i{
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  
 }
 .announcement-boxes .box .button a{
   color: #bdbcbf;
