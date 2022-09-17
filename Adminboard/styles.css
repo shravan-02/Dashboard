@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-.sidebar{
+.sidebar {
   position: fixed;
   height: 100%;
   width: 240px;
@@ -13,35 +13,35 @@
   border-right: 1px solid #fff;
   transition: all 0.5s ease;
 }
-.sidebar.active{
+.sidebar.active {
   width: 60px;
 }
-.sidebar .logo-details{
+.sidebar .logo-details {
   height: 80px;
   display: flex;
   align-items: center;
 }
-.sidebar .logo-details i{
+.sidebar .logo-details i {
   font-size: 28px;
   font-weight: 500;
   color: #fff;
   min-width: 60px;
-  text-align: center
+  text-align: center;
 }
-.sidebar .logo-details .logo_name{
+.sidebar .logo-details .logo_name {
   color: #fff;
   font-size: 24px;
   font-weight: 500;
 }
-.sidebar .nav-links{
+.sidebar .nav-links {
   margin-top: 10px;
 }
-.sidebar .nav-links li{
+.sidebar .nav-links li {
   position: relative;
   list-style: none;
   height: 50px;
 }
-.sidebar .nav-links li a{
+.sidebar .nav-links li a {
   height: 100%;
   width: 100%;
   display: flex;
@@ -49,47 +49,47 @@
   text-decoration: none;
   transition: all 0.4s ease;
 }
-.sidebar .nav-links li a.active{
+.sidebar .nav-links li a.active {
   background: #313438;
 }
-.sidebar .nav-links li a:hover{
+.sidebar .nav-links li a:hover {
   background: #313438;
 }
-.sidebar .nav-links li i{
+.sidebar .nav-links li i {
   min-width: 60px;
   text-align: center;
   font-size: 18px;
   color: #fff;
 }
-.sidebar .nav-links li a .links_name{
+.sidebar .nav-links li a .links_name {
   color: #fff;
   font-size: 15px;
   font-weight: 400;
   white-space: nowrap;
 }
-.sidebar .nav-links .log_out{
+.sidebar .nav-links .log_out {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
-.home-section{
+.home-section {
   position: relative;
-  background: #2d3035;
+  background: #1e1f27;
   min-height: 100vh;
   width: calc(100% - 240px);
   left: 240px;
   transition: all 0.5s ease;
 }
-.sidebar.active ~ .home-section{
+.sidebar.active ~ .home-section {
   width: calc(100% - 60px);
   left: 60px;
 }
-.home-section nav{
+.home-section nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   height: fit-content;
-  background: #1e1f27;
+  background: #2d3035;
   border-bottom: 1px solid #fff;
   display: flex;
   align-items: center;
@@ -101,21 +101,21 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease;
 }
-.sidebar.active ~ .home-section nav{
+.sidebar.active ~ .home-section nav {
   left: 60px;
   width: calc(100% - 60px);
 }
-.home-section nav .sidebar-button{
+.home-section nav .sidebar-button {
   display: flex;
   align-items: center;
   font-size: 24px;
   font-weight: 500;
 }
-nav .sidebar-button i{
+nav .sidebar-button i {
   font-size: 35px;
   margin-right: 10px;
 }
-.home-section nav .search-box{
+.home-section nav .search-box {
   position: relative;
   margin-top: 20px;
   height: 50px;
@@ -123,7 +123,16 @@ nav .sidebar-button i{
   width: 100%;
   margin: 20px 20px;
 }
-nav .search-box input{
+.nav-btn button {
+  background: none;
+  color:#bdbcbf ;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid #bdbcbf;
+  margin: 0 5px;
+  cursor: pointer;
+}
+nav .search-box input {
   height: 100%;
   width: 100%;
   outline: none;
@@ -134,7 +143,7 @@ nav .search-box input{
   font-size: 18px;
   padding: 0 15px;
 }
-nav .search-box .bx-search{
+nav .search-box .bx-search {
   position: absolute;
   height: 40px;
   width: 40px;
@@ -147,53 +156,55 @@ nav .search-box .bx-search{
   align-items: flex-start;
   transition: all 0.4 ease;
 }
-.home-section nav .profile-details{
+.home-section nav .profile-details {
   display: flex;
   align-items: center;
-  background: #1e1f27;
+  background:  none;
   color: #fff;
   border-radius: 6px;
   height: 50px;
   min-width: 190px;
-  padding: 0 15px 0 2px;
+  /* padding: 0 15px 0 2px; */
 }
-nav .profile-details img{
+nav .profile-details img {
   height: 40px;
   width: 40px;
-  border-radius: 6px;
+  margin-left: 20px;
+  border-radius: 50%;
   object-fit: cover;
 }
-nav .profile-details .admin_name{
+nav .profile-details .admin_name {
   font-size: 15px;
   font-weight: 500;
   color: #fff;
   margin: 0 10px;
   /* white-space: nowrap; */
 }
-nav .profile-details i{
+nav .profile-details i {
   font-size: 25px;
   color: #333;
 }
-.home-section .home-content{
+.home-section .home-content {
   position: relative;
-  padding-top: 104px;
+  padding-top: 150px;
   display: flex;
   min-width: 400px;
   height: fit-content;
   flex-wrap: wrap;
 }
-.home-content .overview-boxes{
+.home-content .overview-boxes {
   display: flex;
   max-width: 900px;
   /* height: ; */
-  /* align-items: center; */
-  /* align-content: space-around; */
+  align-items: center;
+  align-content: flex-start;
+
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 0 20px;
   margin-bottom: 26px;
 }
-.overview-boxes .box{
+.overview-boxes .box {
   display: flex;
   /* flex-wrap: wrap; */
   max-width: 350px;
@@ -205,17 +216,17 @@ nav .profile-details i{
   background: #2d3035;
   color: #bdbcbf;
   box-sizing: border-box;
-  border-left: 12px solid  #5c3f92;
+  border-left: 12px solid #5c3f92;
   padding: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   border-radius: 15px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.overview-boxes .box-topic{
+.overview-boxes .box-topic {
   font-size: 20px;
   font-weight: 500;
 }
-.home-content .box .number{
+.home-content .box .number {
   display: inline-block;
   font-size: 35px;
   margin-top: -6px;
@@ -248,13 +259,13 @@ nav .profile-details i{
   font-size: 20px;
   margin-right: 5px;
 } */
-.box .indicator i.down{
+.box .indicator i.down {
   background: #e87d88;
 }
-.home-content .box .indicator .text{
+.home-content .box .indicator .text {
   font-size: 12px;
 }
-.home-content .box .cart{
+.home-content .box .cart {
   display: inline-block;
   font-size: 32px;
   height: 50px;
@@ -267,23 +278,23 @@ nav .profile-details i{
   margin: -15px 0 0 6px;
   flex-wrap: wrap;
 }
-.home-content .box .cart.two{
-   color: #2BD47D;
-   background: #C0F2D8;
- }
-.home-content .box .cart.three{
-   color: #ffc233;
-   background: #ffe8b3;
- }
-.home-content .box .cart.four{
-   color: #e05260;
-   background: #f7d4d7;
- }
-.home-content .total-order{
+.home-content .box .cart.two {
+  color: #2bd47d;
+  background: #c0f2d8;
+}
+.home-content .box .cart.three {
+  color: #ffc233;
+  background: #ffe8b3;
+}
+.home-content .box .cart.four {
+  color: #e05260;
+  background: #f7d4d7;
+}
+.home-content .total-order {
   font-size: 20px;
   font-weight: 500;
 }
-.home-content .announcement-boxes{
+.home-content .announcement-boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -295,48 +306,47 @@ nav .profile-details i{
 }
 
 /* right box */
-.home-content .announcement-boxes .recent-announcement{
+.home-content .announcement-boxes .recent-announcement {
   background: #fff;
   padding: 20px 30px;
   margin: 0 20px;
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.home-content .announcement-boxes .announcement-details{
+.home-content .announcement-boxes .announcement-details {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 0; 
+  padding: 30px 0;
 }
-.announcement-boxes .box .title{
+.announcement-boxes .box .title {
   font-size: 24px;
   font-weight: 500;
   color: #bdbcbf;
   /* margin-bottom: 10px; */
 }
-.announcement-boxes .announcement-details li.topic{
+.announcement-boxes .announcement-details li.topic {
   font-size: 20px;
   font-weight: 500;
 }
-.announcement-boxes .announcement-details li{
+.announcement-boxes .announcement-details li {
   list-style: none;
   margin: 8px 0;
 }
-.announcement-boxes .announcement-details li a{
+.announcement-boxes .announcement-details li a {
   font-size: 18px;
   color: #bdbcbf;
   font-size: 400;
   text-decoration: none;
 }
-.announcement-boxes .box .button{
+.announcement-boxes .box .button {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  
 }
-.announcement-boxes .box .button a{
+.announcement-boxes .box .button a {
   color: #bdbcbf;
-  background: #0A2558;
+  background: #0a2558;
   padding: 4px 12px;
   font-size: 15px;
   font-weight: 400;
@@ -344,25 +354,25 @@ nav .profile-details i{
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.announcement-boxes .box .button a:hover{
-  background:  #0d3073;
+.announcement-boxes .box .button a:hover {
+  background: #0d3073;
 }
 
 /* Right box */
-.home-content .announcement-boxes .top-announcement{
+.home-content .announcement-boxes .top-announcement {
   background: #2d3035;
   padding: 20px 30px;
   margin: 0 20px 50px 0;
   border-radius: 12px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.announcement-boxes .top-announcement li{
+.announcement-boxes .top-announcement li {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 10px 0;
 }
-.announcement-boxes .top-announcement li a img{
+.announcement-boxes .top-announcement li a img {
   height: 40px;
   width: 40px;
   object-fit: cover;
@@ -370,12 +380,12 @@ nav .profile-details i{
   margin-right: 10px;
   background: #333;
 }
-.announcement-boxes .top-announcement li a{
+.announcement-boxes .top-announcement li a {
   /* display: flex; */
   align-items: center;
   text-decoration: none;
 }
-.announcement-boxes .top-announcement li span{
+.announcement-boxes .top-announcement li span {
   /* display: flex; */
   align-items: center;
   text-decoration: none;
@@ -386,16 +396,14 @@ nav .profile-details i{
   color: #bdbcbf;
 }
 
-
 .announcement-boxes .top-announcement li .product,
-.sub-text{
+.sub-text {
   font-size: 10px;
   font-weight: 400;
   color: #bdbcbf;
   text-decoration: none;
-
 }
-.announcement-solid-line{
+.announcement-solid-line {
   color: #bdbcbf;
   text-decoration: none;
   margin-top: 10px;
@@ -426,4 +434,3 @@ nav .profile-details i{
   width: 60px;
   border-radius: 50%;
 }
-
