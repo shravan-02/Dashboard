@@ -7,6 +7,7 @@
 }
 .sidebar {
   position: fixed;
+  display: block;
   height: 100%;
   width: 240px;
   background: #2d3035;
@@ -125,7 +126,7 @@ nav .sidebar-button i {
 }
 .nav-btn button {
   background: none;
-  color:#bdbcbf ;
+  color: #bdbcbf;
   padding: 5px 12px;
   border-radius: 20px;
   border: 1px solid #bdbcbf;
@@ -155,11 +156,12 @@ nav .search-box .bx-search {
   font-size: 22px;
   align-items: flex-start;
   transition: all 0.4 ease;
+  cursor: pointer;
 }
 .home-section nav .profile-details {
   display: flex;
   align-items: center;
-  background:  none;
+  background: none;
   color: #fff;
   border-radius: 6px;
   height: 50px;
@@ -433,4 +435,29 @@ nav .profile-details i {
   height: 60px;
   width: 60px;
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    width: 50px;
+  }
+  .home-section nav {
+    /* position: absolute; */
+    left: 50px;
+    width: auto;
+  }
+  .home-section {
+    /* width: calc(100% + 240px); */
+    position: absolute;
+    /* width: 100%; */
+    left: 50px;
+    width: auto;
+    height: auto;
+  }
+
+  .home-content {
+    position: absolute;
+    top: 100px;
+    height: max-content;
+  }
 }
